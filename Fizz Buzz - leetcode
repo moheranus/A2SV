@@ -1,0 +1,22 @@
+class Solution {
+    public List<String> fizzBuzz(int n) {
+         List<String> display = new ArrayList<String>();
+        for(int num = 1; num<=n; num++){
+            if(num % 3 == 0 && num %5 == 0){
+                display.add("FizzBuzz");
+            }
+            else if(num % 3 == 0){
+                display.add("Fizz");
+            }
+            else if(num % 5 == 0){
+                display.add("Buzz");
+            }
+            else{
+                display.add(Integer.toString(num));
+            }
+        }
+       return display;
+        
+    }
+    
+}
